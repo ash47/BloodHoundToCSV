@@ -137,6 +137,8 @@ $(document).ready(function() {
 
 										// Generate a CSV
 										var keyOrder = Object.keys(seenProps);
+										keyOrder.sort();
+										
 										var theResult = keyOrder.join(',') + '\n';
 
 										for(var i=0; i<allItems.length; ++i) {
